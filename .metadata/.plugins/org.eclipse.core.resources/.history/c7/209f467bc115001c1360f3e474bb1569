@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="style/style.css">
+<title>Tienda generica</title>
+</head>
+<body>
+	<form action="comprobarUsuario.jsp" method="post">
+		<div>
+			<label>Usuario: </label>
+			<input type="text" name="usuario">
+		</div>
+		<div>
+			<label>Contraseña: </label>
+			<input type="password" name="pass">
+		</div>
+		<div>
+			<input type="submit">
+		</div>
+	</form>
+</body>
+</html>

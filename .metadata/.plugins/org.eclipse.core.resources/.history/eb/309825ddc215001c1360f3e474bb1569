@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="style/styles.css">
+<link rel="stylesheet" href="style/main.css">
+<title>Tienda generica</title>
+</head>
+<body>
+	<h1 class="titulo-tienda">Bienvenido a nuestra tienda genérica</h1>
+	<section class="main">
+        <div class="container">
+            <section class="row">
+                <div class="col">
+                    <div class="border-top border-bottom py-3">
+                        <p class="ingresa">Ingresa con tu usuario y contraseña</p>
+                    </div>
+                    <div>
+                        <form action="ingresos.html">
+                            <label for="usuario">
+                                <span>Usuario: </span>
+                                <input type="text" name="" id="usuario" placeholder="Usuario">
+                            </label>
+                            <label for="pass">
+                                <span>Contraseña: </span>
+                                <input type="password" name="" id="pass" placeholder="Contraseña">
+                            </label>
+                            <div class="contenedor-botones">
+                                <input type="submit" value="Continuar" class="botones-usuario">
+                                <input type="reset" value="Cancelar" class="botones-usuario">
+                            </div>
+    
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+	<form action="comprobarUsuario.jsp" method="post">
+		<div>
+			<label>Usuario: </label>
+			<input type="text" name="usuario">
+		</div>
+		<div>
+			<label>Contraseña: </label>
+			<input type="password" name="pass">
+		</div>
+		<div>
+			<input type="submit">
+		</div>
+	</form>
+</body>
+</html>

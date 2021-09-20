@@ -1,0 +1,81 @@
+@charset "ISO-8859-1";
+*{
+    margin: 0;
+    padding: 0;
+}
+.titulo-tienda{
+  text-align: center;
+  margin-top: 50px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  color: #806a41;
+}
+.ingresa{
+  text-align: center;
+  font-size: 25px;
+  color: grey;
+}
+form label{
+  margin-left: 50px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.usuario{
+  display: flex;
+}
+form label input{
+  flex-wrap: wrap;
+  width: 75vw;
+  height: 35px;
+  font-size: 15px;
+  /* border-radius: 5px; */
+}
+
+.contenedor-botones{
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.botones-usuario{
+  margin: 0 auto;
+  width: 150px;
+  height: 40px;
+  color: white;
+  border: 2px solid #806a41;
+  background-color: #806a41;
+  border-radius: 10px;
+}
+.botones-usuario a{
+  color: white;
+}
+.botones-usuario:hover{
+  background-color: white;
+  color: #806a41;
+  box-shadow: 3px 3px 3px gray;
+}
+.enlace-usuario{
+  text-align: center;
+  padding-top: 5px;
+  width: 150px;
+  height: 40px;
+  color: white;
+  border: 2px solid #806a41;
+  background-color: #806a41;
+  border-radius: 10px;
+}
+.enlace-usuario:hover{
+  text-align: center;
+  padding-top: 5px;
+  width: 150px;
+  height: 40px;
+  color: white;
+  border: 2px solid #806a41;
+  background-color: white;
+  color: #806a41;
+  border-radius: 10px;
+}
+.menu{
+	display: block;
+	padding: 0.5rem 1rem;
+}
