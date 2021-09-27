@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import = "java.sql.*" %>
+<%@ page import = "javax.swing.JOptionPane" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,6 +21,7 @@
 		Statement st = conexion.createStatement();
 		String sql = "INSERT INTO usuarios (cedula_usuario, email_usuario, nombre_usuario, password, usuario) VALUES("+cedula+",'"+correo+"', '"+nombre+"', '"+pass+"', '"+usuario+"')";
 		st.executeUpdate(sql);
+		JOptionPane.showMessageDialog(null, "Usuario agregado");
 		response.sendRedirect("usuarios.jsp");
 	%>
 </body>

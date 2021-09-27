@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import = "java.sql.*" %>
+<%@ page import = "javax.swing.JOptionPane" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +10,8 @@
 <title>comprobar usuario</title>
 </head>
 <body>
-	<%
+	<%	
+		
 		String usuario = request.getParameter("usuario");
 		String password = request.getParameter("pass");
 		Class.forName("com.mysql.jdbc.Driver");
@@ -24,11 +27,12 @@
 		if(i==1){
 			out.println("Usuario OK");
 			response.sendRedirect("principal.jsp");
-		} else{
-			
-			out.println("no existe el usuario");
+		}
+		else{
+			JOptionPane.showMessageDialog(null, "Usuario o contraseña errados, intente de nuevo");
 			response.sendRedirect("index.html");
 		}
 	%>
+		
 </body>
 </html>

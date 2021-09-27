@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="style/styles.css">
+<link rel="stylesheet" href="style/main.css">
+<link rel="shortcut icon" href="img/logo_pestana.png" />
+<title>Tienda generica Eclipse</title>
+</head>
+<body>
+	<img alt="" src="img/logo_header.png" class="logo">
+	<h1 class="titulo-tienda">Bienvenido a nuestra tienda generica</h1>
+	<section class="main">
+		<div class="container">
+			<section class="row">
+				<div class="col">
+					<div class="border-top border-bottom py-3">
+						<p class="ingresa">Ingresa con tu usuario y contraseña</p>
+				    </div>
+				    <div>
+						<form action="comprobarUsuario.jsp" method="post">
+							<label for="usuario">
+								<span>Usuario:</span>
+								<input type="text" name="usuario" placeholder="Usuario" id="usuario">
+							</label>
+							<label for="pass">
+								<span>Contraseña:</span>
+								<input type="password" name="pass" placeholder="Contraseï¿½a" id="pass">
+							</label>
+							<div class="contenedor-botones">
+								<input type="submit" value="Aceptar" class="botones-usuario">
+								<input type="reset" value="Cancelar" class="botones-usuario">
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+</body>	
+</html>

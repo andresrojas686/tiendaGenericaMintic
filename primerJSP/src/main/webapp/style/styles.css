@@ -6,6 +6,9 @@
 body{
 	background-color: red;
 }
+.logo{
+	width:15vw;
+}
 .titulo-tienda{
   text-align: center;
   margin-top: 50px;

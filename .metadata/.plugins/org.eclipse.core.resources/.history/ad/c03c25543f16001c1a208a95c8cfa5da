@@ -1,7 +1,0 @@
-<a href="usuarios.jsp" class="nav-link active" data-toggle="tab">Usuarios</a>
-<a href="clientes.jsp">Clientes</a>
-<a href="proveedores.jsp">Proveedores</a>
-<a href="producto.jsp">Producto</a>
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>

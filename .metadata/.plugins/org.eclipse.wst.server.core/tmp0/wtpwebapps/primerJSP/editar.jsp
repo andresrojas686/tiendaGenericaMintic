@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <%@ page import = "java.sql.*" %>
+<%@ page import = "javax.swing.JOptionPane" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -66,6 +67,7 @@
 						String sql = "UPDATE usuarios SET email_usuario ='"+correo+"', nombre_usuario = '"+nombre+"', password = '"+pass+"', usuario = '"+usuario+"' WHERE cedula_usuario = "+cedula;
 						Statement st = conexion.createStatement();
 						st.executeUpdate(sql);
+						JOptionPane.showMessageDialog(null, "Datos del Usuario Actualizados");
 						response.sendRedirect("usuarios.jsp");
 					}
 					%>
